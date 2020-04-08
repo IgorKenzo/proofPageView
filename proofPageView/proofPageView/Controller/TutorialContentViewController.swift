@@ -10,9 +10,9 @@ import UIKit
 
 class TutorialContentViewController: UIViewController {
 
-    @IBOutlet var headingLabel : UILabel!
-    @IBOutlet var subHeadingLabel : UILabel!
-    @IBOutlet var contentImageView : UIImageView!
+    @IBOutlet weak var headingLabel : UILabel!
+    @IBOutlet weak var subHeadingLabel : UILabel!
+    @IBOutlet weak var contentImageView : UIImageView!
   
     var index = 0
     var heading = ""
@@ -24,6 +24,7 @@ class TutorialContentViewController: UIViewController {
         
         headingLabel.text = heading
         subHeadingLabel.text = subHeading
+        contentImageView.image = UIImage(named: imageFile)
     }
 
     /*

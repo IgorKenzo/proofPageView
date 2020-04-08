@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        if let tutorialViewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateViewController(withIdentifier: "TutorialViewController") as? TutorialViewController {
+            present(tutorialViewController, animated: true, completion:nil)
+        }
+    }
 }
 
