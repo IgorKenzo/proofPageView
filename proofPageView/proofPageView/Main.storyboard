@@ -10,25 +10,14 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gitFlow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="proofPageView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-
-                        <subviews>
-
-                            
-                            
-                        </subviews>
-
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-
-
                         <constraints>
-                            <constraint firstItem="n57-pz-JLv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UlK-FP-xup"/>
+                            <constraint firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UlK-FP-xup"/>
                         </constraints>
-
-
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -41,9 +30,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-
             <point key="canvasLocation" x="139" y="96"/>
-
         </scene>
     </scenes>
 </document>

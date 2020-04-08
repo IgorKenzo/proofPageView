@@ -40,6 +40,10 @@ class TutorialViewController: UIViewController, TutorialPageViewControllerDelega
         updateUI()
     }
     
+    @IBAction func btnJogarPressed(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "fezTutorial")
+        dismiss(animated: true, completion: nil)
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

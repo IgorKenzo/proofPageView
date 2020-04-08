@@ -16,8 +16,13 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        if let tutorialViewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateViewController(withIdentifier: "TutorialViewController") as? TutorialViewController {
-            present(tutorialViewController, animated: true, completion:nil)
+        
+        if !UserDefaults.standard.bool(forKey: "fezTutorial")
+        {
+            
+            if let tutorialViewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateViewController(withIdentifier: "TutorialViewController") as? TutorialViewController {
+                present(tutorialViewController, animated: true, completion:nil)
+            }
         }
     }
 }
